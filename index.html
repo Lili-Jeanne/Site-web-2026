@@ -25,12 +25,12 @@
       <img src="assets/img/logo-lj-seul-bleu-et-rouge.png" alt="Logo Lili-Jeanne Flourez" />
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#services">Services</a></li>
       <li><a href="#apropos">À propos</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li class="mobile-only"><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="btn-contact-nav" id="btn-nav-contact">Contact</a>
+    <a href="#contact" class="btn-contact-nav" id="btn-nav-contact">Contactez-moi</a>
   </nav>
 
   <!-- ===== HERO ===== -->
@@ -44,7 +44,7 @@
       La <span class="highlight-jaune">PRÉSENCE</span> EN LIGNE<br />
       DONT VOUS AVEZ <span class="highlight-jaune">BESOIN</span>
     </h1>
-    <a href="#contact" class="btn-contact-hero" id="btn-hero-contact">Contact</a>
+    <a href="#contact" class="btn-contact-hero" id="btn-hero-contact">Lancer mon projet</a>
   </section>
 
   <!-- ===== BANDEAU DAMIER ===== -->
@@ -65,8 +65,11 @@
         <p>
           Designer indépendante spécialisée en identité visuelle et création de sites internet.<br /><br />
           J'accompagne les entrepreneurs en Dordogne et en Gironde à créer une image de marque unique, cohérente et
-          professionnelle.
+          professionnelle. <br /><br />
+          N'hésitez pas à prendre contact pour discuter de vos besoins et de vos projets.
         </p>
+        <a href="#contact" class="btn-contact-hero" id="btn-hero-contact">Échangeons ensemble</a>
+
       </div>
 
       <!-- Image secondaire (remplace rectangle rouge droite/bas) -->
@@ -104,6 +107,7 @@
         <p>Renforce la confiance de l'utilisateur en donnant une image professionnelle, soignée et fiable à l'ensemble
           du design.</p>
       </div>
+
 
     </div>
   </section>
@@ -195,7 +199,7 @@
       </div>
 
       <div class="service-card">
-        <img src="assets/img/papillon-bleu-foncé.png" alt="" aria-hidden="true" />
+        <img src="assets/img/papillon-bleu-fonce.png" alt="" aria-hidden="true" />
         <h3>Site internet</h3>
         <p>- Design personnalisé<br />- Ajout de vos contenus<br />- Mise en ligne du site (frais d’hébergement non
           compris)<br />- Référencement avancé (en option)<br />- Maintenance + animation (en option)</p>
@@ -224,12 +228,15 @@
           <li>Site internet</li>
         </ul>
         <p class="pack-prix">Disponible à partir de 1400€.</p>
+        <a href="#contact" class="btn-contact-pack" id="btn-pack-contact">
+          Parler de mon projet
+        </a>
         <div class="pack-img-bas">
           <img src="assets/img/post-la-maison-de-jeanne-facebook-01.png" alt="Aperçu du pack présence" />
         </div>
       </div>
       <div class="pack-img-droite">
-        <img src="assets/img/template-rendu-identité-visuelle-Samantha.png" alt="Détails du pack présence" />
+        <img src="assets/img/template-rendu-identite-visuelle-Samantha.png" alt="Détails du pack présence" />
       </div>
     </div>
   </section>
@@ -263,10 +270,11 @@
   <section id="contact">
     <h2>Parlons de votre projet</h2>
     <p class="sous-titre">Dites-moi tout, je vous réponds dans les 48h !</p>
-    <form class="contact-form" id="form-contact" action="#" method="post">
+    <form class="contact-form" id="form-contact" action="https://formspree.io/f/mgodybbb" method="post">
       <input id="input-nom" type="text" name="nom" placeholder="Votre nom" required />
       <input id="input-email" type="email" name="email" placeholder="Votre email" required />
       <input id="input-sujet" type="text" name="sujet" placeholder="Sujet" />
+      <input type="hidden" name="_next" value="https://lj-studio.fr/#">
       <textarea id="input-message" name="message" placeholder="Décrivez votre projet..." required></textarea>
       <button type="submit" id="btn-submit-contact">Envoyer mon message</button>
     </form>

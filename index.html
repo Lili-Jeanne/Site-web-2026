@@ -23,7 +23,7 @@
 <body>
 
   <!-- ===== ANNONCE ===== -->
-  <div id="annonce">3 créneaux disponibles juillet</div>
+  <div id="annonce">Places limitées ce mois-ci</div>
 
   <!-- ===== NAVBAR ===== -->
   <nav id="navbar" role="navigation" aria-label="Navigation principale">
@@ -203,7 +203,7 @@
 
       <div class="service-card">
         <img src="assets/img/papillon-jaune.png" alt="" aria-hidden="true" />
-        <h3>Identité visuelle</h3>
+        <h3>Identité visuelle <span class="service-prix">Sur devis</span></h3>
         <p>- Prise de connaissance, analyse des besoins<br />- Logo principal<br />- Logo secondaire<br />- Palette de
           couleur<br />- Typographie</p>
       </div>
@@ -211,13 +211,14 @@
       <div class="service-card">
         <img src="assets/img/papillon-bleu-fonce.png" alt="" aria-hidden="true" />
         <h3>Site internet</h3>
-        <p>- Design personnalisé<br />- Ajout de vos contenus<br />- Mise en ligne du site (frais d’hébergement non
-          compris)<br />- Référencement avancé (en option)<br />- Maintenance + animation (en option)</p>
+        <p>- Design personnalisé<br />- Ajout de vos contenus<br />- Mise en ligne du site (hébergement inclus la 1ère
+          année, puis via l'abonnement mensuel)<br />- Référencement avancé (en option)<br />- Maintenance + animation
+          (en option)</p>
       </div>
 
       <div class="service-card">
         <img src="assets/img/papillon-rouge.png" alt="" aria-hidden="true" />
-        <h3>Supports papier</h3>
+        <h3>Supports papier <span class="service-prix">Sur devis</span></h3>
         <p>- Design recto/verso<br />- Cohérence graphique garantie<br />- Mise en page professionnelle<br />-
           Adaptation aux
           normes imprimeur</p>
@@ -229,10 +230,10 @@
   <!-- ===== BANDEAU DAMIER ===== -->
   <div class="bandeau-damier" aria-hidden="true"></div>
 
-  <!-- ===== SECTION 1 : CRÉATION DE SITE ===== -->
+  <!-- ===== SECTION 1 : CRÉATION DE SITE VITRINE ===== -->
   <section class="tarifs-section" id="tarifs">
     <div class="tarifs-section-titre">
-      <h2>Création de site</h2>
+      <h2>Création de site vitrine</h2>
     </div>
     <p class="tarifs-section-intro">Un tarif fixe, en paiement unique, pour un site sur-mesure qui vous ressemble.
       L'hébergement et le nom de domaine sont inclus pendant la première année.
@@ -253,13 +254,13 @@
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Design sur-mesure adapté à votre activité</li>
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
-            </span>Bouton de prise de RDV (Doctolib ou autre)</li>
+            </span>Bouton de prise de contact ou de réservation</li>
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Site responsive (mobile, tablette, ordinateur)</li>
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Mentions légales et conformité RGPD</li>
         </ul>
-        <a href="#contact" class="btn-pricing">Démarrer avec Découverte</a>
+        <a href="#contact" class="btn-pricing" data-sujet="Formule Découverte">Démarrer avec Découverte</a>
         <p class="pricing-note">Sans engagement</p>
       </div>
 
@@ -268,14 +269,14 @@
         <span class="pricing-badge">Recommandée</span>
         <h3 class="pricing-nom">Formule Visibilité</h3>
         <p class="pricing-prix">450&nbsp;€</p>
-        <p class="pricing-desc">Site 3 pages (ex. Accueil, À propos, Consultations) avec une base de référencement
+        <p class="pricing-desc">Site 3 pages (ex. Accueil, À propos, Services) avec une base de référencement
           pour être mieux trouvé sur Google.</p>
         <div class="pricing-inclus">
           <strong>Inclus :</strong> Tout Découverte + 2 pages supplémentaires + optimisation SEO de base
         </div>
         <ul class="pricing-features">
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
-            </span>Structure 3 pages (Accueil, À propos, Consultations)</li>
+            </span>Structure 3 pages (Accueil, À propos, Services)</li>
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Référencement (SEO) de base : balises, sitemap</li>
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
@@ -283,7 +284,7 @@
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Site responsive et conforme RGPD</li>
         </ul>
-        <a href="#contact" class="btn-pricing btn-pricing--featured">Démarrer avec Visibilité</a>
+        <a href="#contact" class="btn-pricing btn-pricing--featured" data-sujet="Formule Visibilité">Démarrer avec Visibilité</a>
         <p class="pricing-note">Sans engagement</p>
       </div>
 
@@ -308,7 +309,7 @@
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Site responsive et conforme RGPD</li>
         </ul>
-        <a href="#contact" class="btn-pricing">Démarrer avec Complète</a>
+        <a href="#contact" class="btn-pricing" data-sujet="Formule Complète">Démarrer avec Complète</a>
         <p class="pricing-note">Sans engagement</p>
       </div>
 
@@ -348,7 +349,7 @@
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Sans engagement, résiliable à tout moment</li>
         </ul>
-        <a href="#contact" class="btn-pricing">Choisir Essentiel</a>
+        <a href="#contact" class="btn-pricing" data-sujet="Abonnement Essentiel">Choisir Essentiel</a>
         <p class="pricing-note">Sans engagement</p>
       </div>
 
@@ -372,7 +373,7 @@
           <li><span class="pricing-check" aria-hidden="true">&#10003;</span><span class="sr-only">Inclus :
             </span>Sans engagement, résiliable à tout moment</li>
         </ul>
-        <a href="#contact" class="btn-pricing btn-pricing--featured">Choisir Confort</a>
+        <a href="#contact" class="btn-pricing btn-pricing--featured" data-sujet="Abonnement Confort">Choisir Confort</a>
         <p class="pricing-note">Sans engagement</p>
       </div>
 
@@ -472,6 +473,14 @@
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+      });
+    });
+
+    // Pré-remplir le sujet du formulaire de contact selon l'offre choisie
+    const inputSujet = document.getElementById('input-sujet');
+    document.querySelectorAll('[data-sujet]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        inputSujet.value = btn.dataset.sujet;
       });
     });
   </script>

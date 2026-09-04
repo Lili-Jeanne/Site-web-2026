@@ -569,6 +569,21 @@ body {
     text-transform: uppercase;
 }
 
+.service-prix {
+    display: inline-block;
+    font-family: 'PlaypenSans', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--bleu);
+    background-color: var(--creme);
+    border-radius: 999px;
+    padding: 3px 10px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
 .service-card p {
     font-family: 'PlaypenSans', sans-serif;
     font-size: 0.86rem;
@@ -1092,11 +1107,6 @@ body {
     color: var(--bleu);
     opacity: 0.65;
     margin-top: 10px;
-}
-
-.tarifs-section--alt .pricing-note {
-    color: var(--creme);
-    opacity: 0.75;
 }
 
 @media (max-width: 900px) {

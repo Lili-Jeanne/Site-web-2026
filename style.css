@@ -28,6 +28,7 @@
     --creme: #FFF9EE;
     --rouge: #9B2222;
     --jaune: #F9AF1D;
+    --jaune-texte: #C08300;
     --bleu: #0B3847;
     --bleu-clair: #4A60A9;
     --blanc: #FFFFFF;
@@ -400,11 +401,11 @@ body {
 }
 
 .cle-card:nth-child(1) h3 {
-    color: var(--jaune);
+    color: var(--jaune-texte);
 }
 
 .cle-card:nth-child(2) h3 {
-    color: var(--bleu);
+    color: var(--bleu-clair);
 }
 
 .cle-card:nth-child(3) h3 {
@@ -458,12 +459,42 @@ body {
 
 .etape {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 44px 140px 1fr;
+    align-items: start;
+    column-gap: 28px;
+    position: relative;
+}
+
+.etape-marker {
+    grid-column: 1;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bleu);
+    color: var(--creme);
+    font-family: 'CherryBomb', sans-serif;
+    font-size: 1.1rem;
+    display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ligne verticale reliant chaque étape à la suivante */
+.etape:not(:last-child) .etape-marker::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 52px;
+    background-color: var(--bleu-clair);
 }
 
 .etape-img {
+    grid-column: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,7 +502,12 @@ body {
 
 .etape-img img {
     width: 140px;
-    height: auto;
+    height: 140px;
+    object-fit: contain;
+}
+
+.etape-texte {
+    grid-column: 3;
 }
 
 .etape-texte h3 {
@@ -488,31 +524,29 @@ body {
     color: var(--bleu);
 }
 
-/* Étapes image à droite : on inverse l'ordre visuel des colonnes */
-.etape-img-droite .etape-texte {
-    order: 1;
-}
-
-.etape-img-droite .etape-img {
-    order: 2;
-}
-
 @media (max-width: 768px) {
     .etape {
         grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 14px;
         text-align: center;
     }
 
-    .etape-img-droite .etape-texte {
-        order: 2;
+    .etape-marker {
+        grid-column: 1;
     }
 
-    .etape-img-droite .etape-img {
-        order: 1;
+    .etape-img {
+        grid-column: 1;
+    }
+
+    .etape-texte {
+        grid-column: 1;
     }
 
     .etape-img img {
         width: 100px;
+        height: 100px;
     }
 }
 
@@ -564,7 +598,7 @@ body {
 .service-card h3 {
     font-family: 'CherryBomb', sans-serif;
     font-size: 1.15rem;
-    color: var(--jaune);
+    color: var(--jaune-texte);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -592,7 +626,7 @@ body {
 }
 
 .service-card:nth-child(1) h3 {
-    color: var(--jaune);
+    color: var(--jaune-texte);
 }
 
 .service-card:nth-child(2) h3 {

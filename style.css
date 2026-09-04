@@ -1,7 +1,7 @@
 /* ===== FONTS ===== */
 @font-face {
     font-family: 'CherryBomb';
-    src: url('assets/typo/CherryBombOne-Regular.ttf') format('truetype');
+    src: url('assets/typo/CherryBombOne-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'PlaypenSans';
-    src: url('assets/typo/PlaypenSansDeva-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/typo/PlaypenSansDeva-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
